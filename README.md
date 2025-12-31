@@ -72,13 +72,3 @@ src/
 
 * **Fast Fourier Transform (FFT):** Used strictly for the visualization aspect. It breaks the audio signal down into its constituent sine waves to display the frequency content.
 * **IIR Filters:** Infinite Impulse Response filters are used for the equalizer because they are computationally efficient. The specific topology is a 2nd-order section (Bi-quad) configured as a Peaking Filter.
-
-## 📝 License
-
-This project is open-source and available for educational purposes.
-### Verificación de fuentes utilizadas para este README:
-* **10-Band Equalizer & Frequencies:** Extraído de `AudioController.java` donde se define el array `freqs`.
-* **Noise Reduction:** Basado en la lógica `noiseGate` dentro de `AudioController.java` que reduce la amplitud cuando la señal es menor a 0.001.
-* **FFT & Visualization:** Basado en `FFT.java` (implementación Cooley-Tukey con relleno de ceros) y el método `drawWaves` en `AudioController.java`.
-* **Bi-quad IIR Filters:** Confirmado en `EqualizerFilter.java` que implementa la ecuación de diferencia y cita "Robert Bristow-Johnson's Audio EQ Cookbook".
-* **Controls:** Botones de Play, Pause, Reset y Upload visibles en `FFTAudio.form` y gestionados en `AudioController.java`.
